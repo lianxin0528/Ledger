@@ -1,0 +1,17 @@
+def version_Name = "1.0.0" //只能是X.X.X格式，X为数字
+def version_Build = 1 //只能是1-999的数字
+def version_Code = 2000 * 1000 + version_Build
+
+ext {
+    android = [
+            applicationId          : "space.lianxin.ledger",
+            compileSdkVersion      : 29,
+            minSdkVersion          : 23,
+            targetSdkVersion       : 29,
+            versionName            : version_Name,
+            versionCode            : version_Code,
+            buildTime              : new Date().format("yyyyMMddhhmm"), // 编译日期
+            javaSourceCompatibility: JavaVersion.VERSION_1_8,
+            javaTargetCompatibility: JavaVersion.VERSION_1_8
+    ]
+}

@@ -1,0 +1,19 @@
+apply from: '../library_module_build.gradle'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    resourcePrefix "mine_"
+}
+
+dependencies {
+
+}

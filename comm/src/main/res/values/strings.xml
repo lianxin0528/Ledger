@@ -1,0 +1,11 @@
+<resources>
+
+    <!--================ 模块相关字符串 ================-->
+    <string name="comm_Name">Ledger</string>
+
+    <!--================ 系统默认提示相关字符串 ================-->
+    <string name="comm_loadHint">正在加载…</string>
+    <string name="comm_noMoreTips">没有更多了~</string>
+    <string name="comm_loadMoreTips">数据加载中~</string>
+
+</resources>

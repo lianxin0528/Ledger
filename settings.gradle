@@ -1,0 +1,4 @@
+include ':mine'
+include ':comm'
+include ':app'
+rootProject.name = "Ledger"

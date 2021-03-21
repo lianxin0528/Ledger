@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <!--================ 主题色 ================-->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="mainThemeColor">#FF30D18B</color>
+
+    <!--================ 通用颜色 ================-->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="transparent">#00000000</color>
+
+    <!--================ 其他默认配置色 ================-->
+    <color name="defaultBackground">#FFFFFF</color> <!-- Activity默认背景色 -->
+    <color name="itemLineBgColor">#FFEBEBEB</color> <!-- 默认分割线颜色 -->
+    <color name="keyLightColor">#FF30D18B</color> <!-- 关键字高亮颜色 -->
+
+</resources>
