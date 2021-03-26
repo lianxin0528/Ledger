@@ -1,10 +1,10 @@
 package space.lianxin.comm.constants.arouter
 
 import android.app.Activity
+import androidx.fragment.app.Fragment
 import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.launcher.ARouter
-import com.blankj.utilcode.util.ActivityUtils
-import space.lianxin.comm.extention.putExtra
+import space.lianxin.comm.constants.arouter.RouterStart.navigation
 
 /**
  * ===========================================
@@ -38,6 +38,21 @@ object RouterStart {
         }
     }
 
+    /**
+     * 获取一个Fragment实例
+     * @param path 路由地址
+     */
+    fun getFragment(path: String): Fragment {
+        return ARouter.getInstance()
+            .build(path)
+            .navigation() as Fragment
+    }
+
+    /**
+     * 获取一个Activity或者Fragment的Postcard对象
+     * 需要传值时使用。
+     * @param path 路由地址
+     */
     fun newIntent(path: String): Postcard {
         return ARouter.getInstance().build(path)
     }

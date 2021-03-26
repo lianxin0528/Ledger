@@ -5,6 +5,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.viewbinding.ViewBinding
 import com.airbnb.mvrx.MvRxView
 import com.airbnb.mvrx.MvRxViewId
+import com.airbnb.mvrx.MvRxViewModelStore
 
 /**
  * ===========================================
@@ -16,10 +17,12 @@ import com.airbnb.mvrx.MvRxViewId
  */
 abstract class ComMvRxFragment<T : ViewBinding> : ComFragment<T>(), MvRxView {
 
+    override val mvrxViewModelStore by lazy { MvRxViewModelStore(viewModelStore) }
     private val mvrxViewIdProperty = MvRxViewId()
     final override val mvrxViewId: String by mvrxViewIdProperty
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        mvrxViewModelStore.restoreViewModels(this, savedInstanceState)
         mvrxViewIdProperty.restoreFrom(savedInstanceState)
         super.onCreate(savedInstanceState)
     }
@@ -33,6 +36,7 @@ abstract class ComMvRxFragment<T : ViewBinding> : ComFragment<T>(), MvRxView {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
+        mvrxViewModelStore.saveViewModels(outState)
         mvrxViewIdProperty.saveTo(outState)
     }
 

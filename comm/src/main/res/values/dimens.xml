@@ -10,6 +10,9 @@
     <dimen name="comm_smallVerMargin">8dp</dimen>
 
     <!--================ 常用dp ================-->
+    <dimen name="comm_52dp">52dp</dimen>
+    <dimen name="comm_44dp">44dp</dimen>
+    <dimen name="comm_32dp">32dp</dimen>
     <dimen name="comm_24dp">24dp</dimen>
     <dimen name="comm_20dp">20dp</dimen>
     <dimen name="comm_16dp">16dp</dimen>

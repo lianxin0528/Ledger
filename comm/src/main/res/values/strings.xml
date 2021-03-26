@@ -7,5 +7,6 @@
     <string name="comm_loadHint">正在加载…</string>
     <string name="comm_noMoreTips">没有更多了~</string>
     <string name="comm_loadMoreTips">数据加载中~</string>
+    <string name="comm_exit_app">再按一次退出程序</string>
 
 </resources>

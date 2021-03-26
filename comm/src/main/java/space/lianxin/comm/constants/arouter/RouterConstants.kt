@@ -20,6 +20,8 @@ object RouterConstants {
     /** mine模块 */
     object Mine {
         private const val Group = "/Mine/"
+
+        const val MineFragment = "${Group}MineFragment"
     }
 
 

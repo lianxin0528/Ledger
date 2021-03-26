@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ledger</string>
+
+    <string name="menuMainNaviFlow">流水</string>
+    <string name="menuMainNaviChart">图表</string>
+    <string name="menuMainNaviMine">我的</string>
+
 </resources>

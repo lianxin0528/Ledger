@@ -1,13 +1,13 @@
 package space.lianxin.comm.ui.activity
 
 import android.graphics.Color
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.CallSuper
 import androidx.viewbinding.ViewBinding
 import space.lianxin.base.extention.click
 import space.lianxin.base.extention.setStatusColor
-import space.lianxin.base.ui.controller.simpleController
 import space.lianxin.comm.databinding.CommActivityTitleBinding
 
 /**
@@ -30,7 +30,13 @@ abstract class TitleActivity<T : ViewBinding> : ComMvRxAvtivity<CommActivityTitl
     override fun initView() {
         setStatusColor(Color.TRANSPARENT)
         viewBind = initContentBinding()
-        binding.root.addView(viewBind.root)
+        binding.root.addView(
+            viewBind.root,
+            ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT
+            )
+        )
         initHeader()
         initTitleBar(
             binding.titleBar.titleTv,

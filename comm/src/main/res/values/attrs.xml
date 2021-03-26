@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <!--  自定义的TitleCoordinatorLayout  -->
+    <declare-styleable name="TitleCoordinatorLayout">
+        <attr name="tcl_toolbarHeight" format="dimension" />
+        <attr name="tcl_headerHeight" format="dimension" />
+        <attr name="tcl_header" format="reference" />
+        <attr name="tcl_fixed" format="reference" />
+        <attr name="tcl_toolBarIncludeStatusBar" format="boolean" />
+    </declare-styleable>
+
+</resources>

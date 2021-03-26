@@ -2,8 +2,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
 
     <!--================ 主题色 ================-->
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#FF30D18B</color>
+    <color name="colorPrimaryDark">#03DAC5</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="mainThemeColor">#FF30D18B</color>
 
@@ -15,6 +15,12 @@
     <color name="blue">#0000FF</color>
     <color name="yellow">#FFFF00</color>
     <color name="transparent">#00000000</color>
+
+    <color name="menuUnSelect">#FF666666</color> <!-- 菜单未选中颜色 -->
+    <color name="menuSelect">#FF30D18B</color>
+    <color name="textUnSelect">#FF666666</color> <!-- 文字未选中颜色 -->
+    <color name="textSelect">#FF30D18B</color>
+
 
     <!--================ 其他默认配置色 ================-->
     <color name="defaultBackground">#FFFFFF</color> <!-- Activity默认背景色 -->
