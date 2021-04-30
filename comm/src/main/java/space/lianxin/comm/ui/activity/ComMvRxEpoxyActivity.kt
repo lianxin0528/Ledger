@@ -12,7 +12,7 @@ import com.airbnb.mvrx.BaseMvRxViewModel
  * @date: 2021/3/21 14:43
  * ===========================================
  */
-abstract class ComMvRxEpoxyActivity<T : ViewBinding> : ComMvRxAvtivity<T>() {
+abstract class ComMvRxEpoxyActivity<T : ViewBinding> : ComMvRxActivity<T>() {
 
     protected val epoxyController by lazy { buildEpoxyController() }
 

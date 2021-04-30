@@ -14,7 +14,7 @@ import space.lianxin.comm.ui.dialog.LoadingDialog
 /**
  * ===========================================
  * 项目通用的activity。增加弹窗相关。在使用mvrx时，一个界面如果存在多输入的，会导致
- * 显示异常，可以通过继承[ComMvRxAvtivity]的子类。不建议继承该类。
+ * 显示异常，可以通过继承[ComMvRxActivity]的子类。不建议继承该类。
  *
  * @author: lianxin
  * @date: 2021/2/25 12:09

@@ -18,7 +18,7 @@ import space.lianxin.comm.databinding.CommActivityTitleBinding
  * @date: 2021/2/19 12:39
  * ===========================================
  */
-abstract class TitleActivity<T : ViewBinding> : ComMvRxAvtivity<CommActivityTitleBinding>() {
+abstract class TitleActivity<T : ViewBinding> : ComMvRxActivity<CommActivityTitleBinding>() {
 
     override fun inflateBinding() = CommActivityTitleBinding.inflate(layoutInflater)
 

@@ -16,7 +16,7 @@ import com.airbnb.mvrx.MvRxViewId
  * @date: 2021/2/25 13:03
  * ===========================================
  */
-abstract class ComMvRxAvtivity<T : ViewBinding> : ComActivity<T>(), MvRxView {
+abstract class ComMvRxActivity<T : ViewBinding> : ComActivity<T>(), MvRxView {
 
     private val mvrxViewIdProperty = MvRxViewId()
     final override val mvrxViewId: String by mvrxViewIdProperty
